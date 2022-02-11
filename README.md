@@ -3,15 +3,9 @@
 Create builds:
 
 - Bot auf dem WLED Discord:
-  - ./build custom
-  - [env:esp32dev_mod]
-board = esp32dev
-platform = ${esp32.platform}
-build_unflags = ${common.build_unflags}
-build_flags = ${common.build_flags_esp32} -D WLED_RELEASE_NAME=ESP32 -D USERMOD_SSDR -D USERMOD_SN_PHOTORESISTOR #-D WLED_DISABLE_BROWNOUT_DET
-lib_deps = ${esp32.lib_deps}
-monitor_filters = esp32_exception_decoder
-board_build.partitions = ${esp32.default_partitions}
+  - Enter
+    - ./build custom
+  - Enter environment definition
 
 
 ## Lazy_Grid_Clock:
