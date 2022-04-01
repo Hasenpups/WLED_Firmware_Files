@@ -33,11 +33,11 @@ M: 6,15,28;6,7,8;8,9,10;10,11,32;30,31,32;28,29,30;8,13,30:50,59,72;50,51,52;52,
 
 ## Word Clock
 
-[env:esp32dev_mod]
-board = esp32dev
-platform = ${esp32.platform}
-build_unflags = ${common.build_unflags}
-build_flags = ${common.build_flags_esp32} -D WLED_RELEASE_NAME=ESP32 -D USERMOD_WORDCLOCK #-D WLED_DISABLE_BROWNOUT_DET
-lib_deps = ${esp32.lib_deps}
-monitor_filters = esp32_exception_decoder
-board_build.partitions = ${esp32.default_partitions}
+[env:esp32dev_mod]  
+board = esp32dev  
+platform = ${esp32.platform}  
+build_unflags = ${common.build_unflags}  
+build_flags = ${common.build_flags_esp32} -D WLED_RELEASE_NAME=ESP32 -D USERMOD_WORDCLOCK #-D WLED_DISABLE_BROWNOUT_DET  
+lib_deps = ${esp32.lib_deps}  
+monitor_filters = esp32_exception_decoder  
+board_build.partitions = ${esp32.default_partitions}  
