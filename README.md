@@ -43,11 +43,11 @@ monitor_filters = esp32_exception_decoder
 board_build.partitions = ${esp32.default_partitions}  
 
 ## WiFi Settings
-[env:nodemcuv2]
-board = nodemcuv2
-platform = ${common.platform_wled_default}
-platform_packages = ${common.platform_packages}
-board_build.ldscript = ${common.ldscript_4m1m}
-build_unflags = ${common.build_unflags}
-build_flags = ${common.build_flags_esp8266} -D WLED_RELEASE_NAME=ESP8266 -D CLIENT_SSID='"WLED"' -D CLIENT_PASS='"rubbeldiekatz"'
-lib_deps = ${esp8266.lib_deps}
+[env:nodemcuv2]  
+board = nodemcuv2  
+platform = ${common.platform_wled_default}  
+platform_packages = ${common.platform_packages}  
+board_build.ldscript = ${common.ldscript_4m1m}  
+build_unflags = ${common.build_unflags}  
+build_flags = ${common.build_flags_esp8266} -D WLED_RELEASE_NAME=ESP8266 -D CLIENT_SSID='"WLED"' -D CLIENT_PASS='"rubbeldiekatz"'  
+lib_deps = ${esp8266.lib_deps}  
